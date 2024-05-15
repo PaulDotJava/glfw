@@ -1,5 +1,9 @@
 project  "GLFW"
-    kind "StaticLib"
+	filter "system:windows"
+    	kind "StaticLib"
+	filter "system:linux"
+		kind "None"
+	filter {}
     language "C"
     staticruntime "off"
     warnings "off"
